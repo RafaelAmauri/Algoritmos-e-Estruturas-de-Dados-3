@@ -1,0 +1,62 @@
+Para conveniencia, use o script ./run-crud.sh para rodar. 
+Esse programa deve ser rodado no terminal 
+
+Os dados ficam salvos na pasta ./dados, e eles NÃO são deletados ao final da execução de ./run-crud 
+Para deletar os dados, use 
+
+```bash 
+rm -rf ./dados/ 
+``` 
+
+
+##################################### 
+##################################### 
+##################################### 
+
+
+A pasta Database contém as classes que sao usadas para todo tipo de entidade. As classes dessa 
+pasta sao usadas para o tipo Grupos, Usuario, Convite e assim por diante. As estruturas de CRUD, 
+as arvores, a tabela hash e o Indice_Lapides.java + SaltedHash.java estao definidos aqui. 
+
+O Indice_Lápides é uma estrutura para gerenciamento de lixo. Ele gerencia o lixo de todos 
+bancos de dados: Usuarios, Grupos, Convites, etc... O funcionamento a fundo esta em forma 
+de comentario no arquivo Indice_Lapides.java
+
+SaltedHash.java serve para armazenar as senhas como forma de hash ao inves de uma string. 
+O funcionamento a fundo dessa classe também está explicado em forma de comentarios no codigo-fonte.
+
+
+#####################################
+#####################################
+#####################################
+
+
+Arquivos da pasta Interfaces codificam a logica dos menus de usuario, grupos, acesso, etc... 
+Quando o usuario navega pelo menu da aplicacao, ele esta usando as funcoes definidas na 
+pasta de Interfaces. No menu de usuarios, eh usada a interface Usuarios.java, no menu 
+de grupos eh usada a interface Grupos.java, e assim por diante. 
+
+<< Nao confundir essas classes com as que estao na pasta Props. Usuarios.java e Usuario.java 
+sao classes diferentes, para coisas diferentes >>
+
+
+#####################################
+#####################################
+#####################################
+
+
+A pasta Props contem o codigo dos tipos definidos pelo projeto. As classes que definem os tipos 
+de objeto e seus construtores estao aqui. Alguns exemplos sao o codigo fonte da classe Usuario, 
+Grupos, e assim por diante.
+
+
+#####################################
+#####################################
+#####################################
+
+
+A pasta Utils contem um unico arquivo, e ele tem algumas funcoes que nao tem muito a ver com o CRUD, 
+mas que implementam funcionalidades uteis. Alguns exemplos de funcao definidas no arquivo sao 
+uma regex que verifica se um email eh valido, a funcao para limpar a tela do terminal, etc... 
+Sao funcoes simples, mas que ajudam a melhorar a aplicacao, seja em funcionalidade ou estetica. 
+  
